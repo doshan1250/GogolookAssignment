@@ -10,6 +10,10 @@
 		4AC58DD95A030B4860411C28 /* libPods-GogolookAssignmentTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64CB763E6B66912FEFF93D73 /* libPods-GogolookAssignmentTests.a */; };
 		68A7D027464E293184206E4C /* libPods-GogolookAssignmentUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23655BB8D5884F3E9F020940 /* libPods-GogolookAssignmentUITests.a */; };
 		6D407D25EA2409A52767545B /* libPods-GogolookAssignment.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74F196E402307E7D425D2FD8 /* libPods-GogolookAssignment.a */; };
+		FB190D5B1DA3B13F0043C52D /* WebManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB190D5A1DA3B13F0043C52D /* WebManager.m */; };
+		FB190D5E1DA3B5980043C52D /* BaseWebManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB190D5D1DA3B5980043C52D /* BaseWebManager.m */; };
+		FB190D611DA3BB4B0043C52D /* TravelData.m in Sources */ = {isa = PBXBuildFile; fileRef = FB190D601DA3BB4B0043C52D /* TravelData.m */; };
+		FB190D641DA3CA460043C52D /* BaseDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB190D631DA3CA460043C52D /* BaseDataModel.m */; };
 		FB97E7A71DA3A9FB007E29AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB97E7A61DA3A9FB007E29AB /* main.m */; };
 		FB97E7AA1DA3A9FB007E29AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB97E7A91DA3A9FB007E29AB /* AppDelegate.m */; };
 		FB97E7AD1DA3A9FB007E29AB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB97E7AC1DA3A9FB007E29AB /* ViewController.m */; };
@@ -47,6 +51,14 @@
 		A7DFC7571338E51CD281570D /* Pods-GogolookAssignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GogolookAssignmentUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GogolookAssignmentUITests/Pods-GogolookAssignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B5E9C6D7341E73ED17EC4B37 /* Pods-GogolookAssignmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GogolookAssignmentUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GogolookAssignmentUITests/Pods-GogolookAssignmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C60E365CEFC49288BA5EC13D /* Pods-GogolookAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GogolookAssignment.release.xcconfig"; path = "Pods/Target Support Files/Pods-GogolookAssignment/Pods-GogolookAssignment.release.xcconfig"; sourceTree = "<group>"; };
+		FB190D591DA3B13F0043C52D /* WebManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebManager.h; sourceTree = "<group>"; };
+		FB190D5A1DA3B13F0043C52D /* WebManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebManager.m; sourceTree = "<group>"; };
+		FB190D5C1DA3B5980043C52D /* BaseWebManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseWebManager.h; sourceTree = "<group>"; };
+		FB190D5D1DA3B5980043C52D /* BaseWebManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseWebManager.m; sourceTree = "<group>"; };
+		FB190D5F1DA3BB4B0043C52D /* TravelData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelData.h; sourceTree = "<group>"; };
+		FB190D601DA3BB4B0043C52D /* TravelData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelData.m; sourceTree = "<group>"; };
+		FB190D621DA3CA460043C52D /* BaseDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDataModel.h; sourceTree = "<group>"; };
+		FB190D631DA3CA460043C52D /* BaseDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDataModel.m; sourceTree = "<group>"; };
 		FB97E7A21DA3A9FB007E29AB /* GogolookAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GogolookAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB97E7A61DA3A9FB007E29AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FB97E7A81DA3A9FB007E29AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -145,6 +157,14 @@
 				FB97E7A91DA3A9FB007E29AB /* AppDelegate.m */,
 				FB97E7AB1DA3A9FB007E29AB /* ViewController.h */,
 				FB97E7AC1DA3A9FB007E29AB /* ViewController.m */,
+				FB190D591DA3B13F0043C52D /* WebManager.h */,
+				FB190D5A1DA3B13F0043C52D /* WebManager.m */,
+				FB190D5C1DA3B5980043C52D /* BaseWebManager.h */,
+				FB190D5D1DA3B5980043C52D /* BaseWebManager.m */,
+				FB190D5F1DA3BB4B0043C52D /* TravelData.h */,
+				FB190D601DA3BB4B0043C52D /* TravelData.m */,
+				FB190D621DA3CA460043C52D /* BaseDataModel.h */,
+				FB190D631DA3CA460043C52D /* BaseDataModel.m */,
 				FB97E7AE1DA3A9FB007E29AB /* Main.storyboard */,
 				FB97E7B11DA3A9FB007E29AB /* Assets.xcassets */,
 				FB97E7B31DA3A9FB007E29AB /* LaunchScreen.storyboard */,
@@ -460,9 +480,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB190D5B1DA3B13F0043C52D /* WebManager.m in Sources */,
+				FB190D611DA3BB4B0043C52D /* TravelData.m in Sources */,
+				FB190D641DA3CA460043C52D /* BaseDataModel.m in Sources */,
 				FB97E7AD1DA3A9FB007E29AB /* ViewController.m in Sources */,
 				FB97E7AA1DA3A9FB007E29AB /* AppDelegate.m in Sources */,
 				FB97E7A71DA3A9FB007E29AB /* main.m in Sources */,
+				FB190D5E1DA3B5980043C52D /* BaseWebManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
