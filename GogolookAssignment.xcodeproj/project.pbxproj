@@ -1,0 +1,724 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4AC58DD95A030B4860411C28 /* libPods-GogolookAssignmentTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64CB763E6B66912FEFF93D73 /* libPods-GogolookAssignmentTests.a */; };
+		68A7D027464E293184206E4C /* libPods-GogolookAssignmentUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23655BB8D5884F3E9F020940 /* libPods-GogolookAssignmentUITests.a */; };
+		6D407D25EA2409A52767545B /* libPods-GogolookAssignment.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74F196E402307E7D425D2FD8 /* libPods-GogolookAssignment.a */; };
+		FB97E7A71DA3A9FB007E29AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB97E7A61DA3A9FB007E29AB /* main.m */; };
+		FB97E7AA1DA3A9FB007E29AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB97E7A91DA3A9FB007E29AB /* AppDelegate.m */; };
+		FB97E7AD1DA3A9FB007E29AB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB97E7AC1DA3A9FB007E29AB /* ViewController.m */; };
+		FB97E7B01DA3A9FB007E29AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB97E7AE1DA3A9FB007E29AB /* Main.storyboard */; };
+		FB97E7B21DA3A9FB007E29AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB97E7B11DA3A9FB007E29AB /* Assets.xcassets */; };
+		FB97E7B51DA3A9FB007E29AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB97E7B31DA3A9FB007E29AB /* LaunchScreen.storyboard */; };
+		FB97E7C01DA3A9FB007E29AB /* GogolookAssignmentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB97E7BF1DA3A9FB007E29AB /* GogolookAssignmentTests.m */; };
+		FB97E7CB1DA3A9FB007E29AB /* GogolookAssignmentUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB97E7CA1DA3A9FB007E29AB /* GogolookAssignmentUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB97E7BC1DA3A9FB007E29AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB97E79A1DA3A9FB007E29AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB97E7A11DA3A9FB007E29AB;
+			remoteInfo = GogolookAssignment;
+		};
+		FB97E7C71DA3A9FB007E29AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB97E79A1DA3A9FB007E29AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB97E7A11DA3A9FB007E29AB;
+			remoteInfo = GogolookAssignment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		022529398B775098BFBE82E1 /* Pods-GogolookAssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GogolookAssignmentTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GogolookAssignmentTests/Pods-GogolookAssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		23655BB8D5884F3E9F020940 /* libPods-GogolookAssignmentUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GogolookAssignmentUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FC545481B3A10A09344BEB6 /* Pods-GogolookAssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GogolookAssignmentTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GogolookAssignmentTests/Pods-GogolookAssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		64CB763E6B66912FEFF93D73 /* libPods-GogolookAssignmentTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GogolookAssignmentTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74F196E402307E7D425D2FD8 /* libPods-GogolookAssignment.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GogolookAssignment.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90E09F25D21925E375A56372 /* Pods-GogolookAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GogolookAssignment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GogolookAssignment/Pods-GogolookAssignment.debug.xcconfig"; sourceTree = "<group>"; };
+		A7DFC7571338E51CD281570D /* Pods-GogolookAssignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GogolookAssignmentUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GogolookAssignmentUITests/Pods-GogolookAssignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B5E9C6D7341E73ED17EC4B37 /* Pods-GogolookAssignmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GogolookAssignmentUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GogolookAssignmentUITests/Pods-GogolookAssignmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C60E365CEFC49288BA5EC13D /* Pods-GogolookAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GogolookAssignment.release.xcconfig"; path = "Pods/Target Support Files/Pods-GogolookAssignment/Pods-GogolookAssignment.release.xcconfig"; sourceTree = "<group>"; };
+		FB97E7A21DA3A9FB007E29AB /* GogolookAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GogolookAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB97E7A61DA3A9FB007E29AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FB97E7A81DA3A9FB007E29AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FB97E7A91DA3A9FB007E29AB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FB97E7AB1DA3A9FB007E29AB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FB97E7AC1DA3A9FB007E29AB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FB97E7AF1DA3A9FB007E29AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB97E7B11DA3A9FB007E29AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB97E7B41DA3A9FB007E29AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FB97E7B61DA3A9FB007E29AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB97E7BB1DA3A9FB007E29AB /* GogolookAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GogolookAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB97E7BF1DA3A9FB007E29AB /* GogolookAssignmentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GogolookAssignmentTests.m; sourceTree = "<group>"; };
+		FB97E7C11DA3A9FB007E29AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB97E7C61DA3A9FB007E29AB /* GogolookAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GogolookAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB97E7CA1DA3A9FB007E29AB /* GogolookAssignmentUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GogolookAssignmentUITests.m; sourceTree = "<group>"; };
+		FB97E7CC1DA3A9FB007E29AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB97E79F1DA3A9FB007E29AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D407D25EA2409A52767545B /* libPods-GogolookAssignment.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB97E7B81DA3A9FB007E29AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AC58DD95A030B4860411C28 /* libPods-GogolookAssignmentTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB97E7C31DA3A9FB007E29AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68A7D027464E293184206E4C /* libPods-GogolookAssignmentUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		271BC168A788D1D838588D8F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74F196E402307E7D425D2FD8 /* libPods-GogolookAssignment.a */,
+				64CB763E6B66912FEFF93D73 /* libPods-GogolookAssignmentTests.a */,
+				23655BB8D5884F3E9F020940 /* libPods-GogolookAssignmentUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A200627574BD1173ACEF01D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90E09F25D21925E375A56372 /* Pods-GogolookAssignment.debug.xcconfig */,
+				C60E365CEFC49288BA5EC13D /* Pods-GogolookAssignment.release.xcconfig */,
+				2FC545481B3A10A09344BEB6 /* Pods-GogolookAssignmentTests.debug.xcconfig */,
+				022529398B775098BFBE82E1 /* Pods-GogolookAssignmentTests.release.xcconfig */,
+				B5E9C6D7341E73ED17EC4B37 /* Pods-GogolookAssignmentUITests.debug.xcconfig */,
+				A7DFC7571338E51CD281570D /* Pods-GogolookAssignmentUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FB97E7991DA3A9FB007E29AB = {
+			isa = PBXGroup;
+			children = (
+				FB97E7A41DA3A9FB007E29AB /* GogolookAssignment */,
+				FB97E7BE1DA3A9FB007E29AB /* GogolookAssignmentTests */,
+				FB97E7C91DA3A9FB007E29AB /* GogolookAssignmentUITests */,
+				FB97E7A31DA3A9FB007E29AB /* Products */,
+				A200627574BD1173ACEF01D2 /* Pods */,
+				271BC168A788D1D838588D8F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FB97E7A31DA3A9FB007E29AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB97E7A21DA3A9FB007E29AB /* GogolookAssignment.app */,
+				FB97E7BB1DA3A9FB007E29AB /* GogolookAssignmentTests.xctest */,
+				FB97E7C61DA3A9FB007E29AB /* GogolookAssignmentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB97E7A41DA3A9FB007E29AB /* GogolookAssignment */ = {
+			isa = PBXGroup;
+			children = (
+				FB97E7A81DA3A9FB007E29AB /* AppDelegate.h */,
+				FB97E7A91DA3A9FB007E29AB /* AppDelegate.m */,
+				FB97E7AB1DA3A9FB007E29AB /* ViewController.h */,
+				FB97E7AC1DA3A9FB007E29AB /* ViewController.m */,
+				FB97E7AE1DA3A9FB007E29AB /* Main.storyboard */,
+				FB97E7B11DA3A9FB007E29AB /* Assets.xcassets */,
+				FB97E7B31DA3A9FB007E29AB /* LaunchScreen.storyboard */,
+				FB97E7B61DA3A9FB007E29AB /* Info.plist */,
+				FB97E7A51DA3A9FB007E29AB /* Supporting Files */,
+			);
+			path = GogolookAssignment;
+			sourceTree = "<group>";
+		};
+		FB97E7A51DA3A9FB007E29AB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB97E7A61DA3A9FB007E29AB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FB97E7BE1DA3A9FB007E29AB /* GogolookAssignmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB97E7BF1DA3A9FB007E29AB /* GogolookAssignmentTests.m */,
+				FB97E7C11DA3A9FB007E29AB /* Info.plist */,
+			);
+			path = GogolookAssignmentTests;
+			sourceTree = "<group>";
+		};
+		FB97E7C91DA3A9FB007E29AB /* GogolookAssignmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FB97E7CA1DA3A9FB007E29AB /* GogolookAssignmentUITests.m */,
+				FB97E7CC1DA3A9FB007E29AB /* Info.plist */,
+			);
+			path = GogolookAssignmentUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB97E7A11DA3A9FB007E29AB /* GogolookAssignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB97E7CF1DA3A9FB007E29AB /* Build configuration list for PBXNativeTarget "GogolookAssignment" */;
+			buildPhases = (
+				04D57AEA53F8CE1A49B96583 /* [CP] Check Pods Manifest.lock */,
+				FB97E79E1DA3A9FB007E29AB /* Sources */,
+				FB97E79F1DA3A9FB007E29AB /* Frameworks */,
+				FB97E7A01DA3A9FB007E29AB /* Resources */,
+				CCEB7870A2558832F9F1404E /* [CP] Embed Pods Frameworks */,
+				91358AA1158A12D8404BE717 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GogolookAssignment;
+			productName = GogolookAssignment;
+			productReference = FB97E7A21DA3A9FB007E29AB /* GogolookAssignment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB97E7BA1DA3A9FB007E29AB /* GogolookAssignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB97E7D21DA3A9FB007E29AB /* Build configuration list for PBXNativeTarget "GogolookAssignmentTests" */;
+			buildPhases = (
+				99E46EF299DDC9E00CB034DB /* [CP] Check Pods Manifest.lock */,
+				FB97E7B71DA3A9FB007E29AB /* Sources */,
+				FB97E7B81DA3A9FB007E29AB /* Frameworks */,
+				FB97E7B91DA3A9FB007E29AB /* Resources */,
+				CE3E5AA1D277C75FA49B248A /* [CP] Embed Pods Frameworks */,
+				877777E0B9F4FBA13BB292A2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB97E7BD1DA3A9FB007E29AB /* PBXTargetDependency */,
+			);
+			name = GogolookAssignmentTests;
+			productName = GogolookAssignmentTests;
+			productReference = FB97E7BB1DA3A9FB007E29AB /* GogolookAssignmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FB97E7C51DA3A9FB007E29AB /* GogolookAssignmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB97E7D51DA3A9FB007E29AB /* Build configuration list for PBXNativeTarget "GogolookAssignmentUITests" */;
+			buildPhases = (
+				B1104BE9129864962FCA485B /* [CP] Check Pods Manifest.lock */,
+				FB97E7C21DA3A9FB007E29AB /* Sources */,
+				FB97E7C31DA3A9FB007E29AB /* Frameworks */,
+				FB97E7C41DA3A9FB007E29AB /* Resources */,
+				3307E9A88C33CD8CB24E65C3 /* [CP] Embed Pods Frameworks */,
+				EBA0B4F780C35A8A60029413 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB97E7C81DA3A9FB007E29AB /* PBXTargetDependency */,
+			);
+			name = GogolookAssignmentUITests;
+			productName = GogolookAssignmentUITests;
+			productReference = FB97E7C61DA3A9FB007E29AB /* GogolookAssignmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB97E79A1DA3A9FB007E29AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Rick Chuang";
+				TargetAttributes = {
+					FB97E7A11DA3A9FB007E29AB = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					FB97E7BA1DA3A9FB007E29AB = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FB97E7A11DA3A9FB007E29AB;
+					};
+					FB97E7C51DA3A9FB007E29AB = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FB97E7A11DA3A9FB007E29AB;
+					};
+				};
+			};
+			buildConfigurationList = FB97E79D1DA3A9FB007E29AB /* Build configuration list for PBXProject "GogolookAssignment" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB97E7991DA3A9FB007E29AB;
+			productRefGroup = FB97E7A31DA3A9FB007E29AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB97E7A11DA3A9FB007E29AB /* GogolookAssignment */,
+				FB97E7BA1DA3A9FB007E29AB /* GogolookAssignmentTests */,
+				FB97E7C51DA3A9FB007E29AB /* GogolookAssignmentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB97E7A01DA3A9FB007E29AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB97E7B51DA3A9FB007E29AB /* LaunchScreen.storyboard in Resources */,
+				FB97E7B21DA3A9FB007E29AB /* Assets.xcassets in Resources */,
+				FB97E7B01DA3A9FB007E29AB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB97E7B91DA3A9FB007E29AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB97E7C41DA3A9FB007E29AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04D57AEA53F8CE1A49B96583 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3307E9A88C33CD8CB24E65C3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GogolookAssignmentUITests/Pods-GogolookAssignmentUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		877777E0B9F4FBA13BB292A2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GogolookAssignmentTests/Pods-GogolookAssignmentTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91358AA1158A12D8404BE717 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GogolookAssignment/Pods-GogolookAssignment-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99E46EF299DDC9E00CB034DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B1104BE9129864962FCA485B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CCEB7870A2558832F9F1404E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GogolookAssignment/Pods-GogolookAssignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE3E5AA1D277C75FA49B248A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GogolookAssignmentTests/Pods-GogolookAssignmentTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBA0B4F780C35A8A60029413 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GogolookAssignmentUITests/Pods-GogolookAssignmentUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB97E79E1DA3A9FB007E29AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB97E7AD1DA3A9FB007E29AB /* ViewController.m in Sources */,
+				FB97E7AA1DA3A9FB007E29AB /* AppDelegate.m in Sources */,
+				FB97E7A71DA3A9FB007E29AB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB97E7B71DA3A9FB007E29AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB97E7C01DA3A9FB007E29AB /* GogolookAssignmentTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB97E7C21DA3A9FB007E29AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB97E7CB1DA3A9FB007E29AB /* GogolookAssignmentUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB97E7BD1DA3A9FB007E29AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB97E7A11DA3A9FB007E29AB /* GogolookAssignment */;
+			targetProxy = FB97E7BC1DA3A9FB007E29AB /* PBXContainerItemProxy */;
+		};
+		FB97E7C81DA3A9FB007E29AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB97E7A11DA3A9FB007E29AB /* GogolookAssignment */;
+			targetProxy = FB97E7C71DA3A9FB007E29AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FB97E7AE1DA3A9FB007E29AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB97E7AF1DA3A9FB007E29AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FB97E7B31DA3A9FB007E29AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB97E7B41DA3A9FB007E29AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB97E7CD1DA3A9FB007E29AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FB97E7CE1DA3A9FB007E29AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB97E7D01DA3A9FB007E29AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90E09F25D21925E375A56372 /* Pods-GogolookAssignment.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GogolookAssignment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Rick.GogolookAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FB97E7D11DA3A9FB007E29AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C60E365CEFC49288BA5EC13D /* Pods-GogolookAssignment.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GogolookAssignment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Rick.GogolookAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FB97E7D31DA3A9FB007E29AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FC545481B3A10A09344BEB6 /* Pods-GogolookAssignmentTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GogolookAssignmentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Rick.GogolookAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GogolookAssignment.app/GogolookAssignment";
+			};
+			name = Debug;
+		};
+		FB97E7D41DA3A9FB007E29AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 022529398B775098BFBE82E1 /* Pods-GogolookAssignmentTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GogolookAssignmentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Rick.GogolookAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GogolookAssignment.app/GogolookAssignment";
+			};
+			name = Release;
+		};
+		FB97E7D61DA3A9FB007E29AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5E9C6D7341E73ED17EC4B37 /* Pods-GogolookAssignmentUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = GogolookAssignmentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Rick.GogolookAssignmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GogolookAssignment;
+			};
+			name = Debug;
+		};
+		FB97E7D71DA3A9FB007E29AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7DFC7571338E51CD281570D /* Pods-GogolookAssignmentUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = GogolookAssignmentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Rick.GogolookAssignmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GogolookAssignment;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB97E79D1DA3A9FB007E29AB /* Build configuration list for PBXProject "GogolookAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB97E7CD1DA3A9FB007E29AB /* Debug */,
+				FB97E7CE1DA3A9FB007E29AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB97E7CF1DA3A9FB007E29AB /* Build configuration list for PBXNativeTarget "GogolookAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB97E7D01DA3A9FB007E29AB /* Debug */,
+				FB97E7D11DA3A9FB007E29AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB97E7D21DA3A9FB007E29AB /* Build configuration list for PBXNativeTarget "GogolookAssignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB97E7D31DA3A9FB007E29AB /* Debug */,
+				FB97E7D41DA3A9FB007E29AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB97E7D51DA3A9FB007E29AB /* Build configuration list for PBXNativeTarget "GogolookAssignmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB97E7D61DA3A9FB007E29AB /* Debug */,
+				FB97E7D71DA3A9FB007E29AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB97E79A1DA3A9FB007E29AB /* Project object */;
+}
