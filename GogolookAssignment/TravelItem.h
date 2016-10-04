@@ -17,7 +17,17 @@
 
 - (void) clearFilter;
 
-- (NSDictionary *) getDataDictionary;
+/**
+ Data getter for viewModel or ViewController, this data will filter by filterKey if it was set
+ 
+ @return data
+ */
+- (NSDictionary <NSString *,NSArray<TravelData *> *> *) getDataDictionary;
 
+/**
+ Categories getter, this method include "all" category
+ 
+ @return categories
+ */
 - (NSArray *) getAllCategories;
 @end
