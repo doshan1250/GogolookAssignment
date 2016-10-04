@@ -17,12 +17,6 @@
                        SuccessBlock:(void (^)(bool hasMore, NSInteger offset, NSDictionary *result))successBlock
                        failureBlock:(void (^)(NSError *error))failureBlock;
 
-- (void) doRequestTravelDataWithLimit:(NSInteger)limit
-                               offset:(NSInteger)offset
-                                  key:(NSString *)keyword
-                         SuccessBlock:(void (^)(bool hasMore, NSInteger offset, NSDictionary *result))successBlock
-                         failureBlock:(void (^)(NSError *error))failureBlock;
-
 @end
 
 @interface WebManager : BaseWebManager<IWeb>

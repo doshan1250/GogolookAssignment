@@ -31,6 +31,8 @@
     NSMutableDictionary *parameter = [NSMutableDictionary new];
     [parameter setValue:@"resourceAquire" forKey:@"scope"];
     [parameter setValue:@"36847f3f-deff-4183-a5bb-800737591de5" forKey:@"rid"];
+    
+    // 分頁機制不適用於此assignment
     if (limit > 0) {
         [parameter setValue:@(limit) forKey:@"limit"];
         [parameter setValue:@(offset) forKey:@"offset"];
@@ -38,22 +40,13 @@
     if (keyword != nil) {
         [parameter setValue:keyword forKey:@"q"];
     }
-    /*
-    @{@"scope":@"resourceAquire",
-      @"rid":@"36847f3f-deff-4183-a5bb-800737591de5",
-      //@"q":@"歷史建築",
-      //@"sort":@"CAT2 desc",
-      //@"limit":@(limit),
-      //@"offset":@(offset)
-      }
-    */
-
+ 
     [self doGETWithAPI:@"apiAccess"
             parameters:parameter
           successBlock:^(NSDictionary *responsedData) {
               
+              // 直接對全部的資料進行分類
               NSMutableDictionary *resultDictionary = [NSMutableDictionary new];
-              
               NSArray *jsonDataArray = responsedData[@"results"];
               NSArray *categories = [jsonDataArray valueForKeyPath:@"@distinctUnionOfObjects.CAT2"];
               for (NSString *category in categories) {
@@ -66,11 +59,11 @@
                   }
                   [resultDictionary setObject:dataModelInCategory forKey:category];
               }
+              
               successBlock((offset < [responsedData[@"count"] integerValue]),offset+jsonDataArray.count,resultDictionary);
               
           } failureBlock:^(NSError *error) {
-              
+              //TODO:
           }];
-
 }
 @end
