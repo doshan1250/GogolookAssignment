@@ -14,6 +14,8 @@
 		FB190D5E1DA3B5980043C52D /* BaseWebManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB190D5D1DA3B5980043C52D /* BaseWebManager.m */; };
 		FB190D611DA3BB4B0043C52D /* TravelData.m in Sources */ = {isa = PBXBuildFile; fileRef = FB190D601DA3BB4B0043C52D /* TravelData.m */; };
 		FB190D641DA3CA460043C52D /* BaseDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB190D631DA3CA460043C52D /* BaseDataModel.m */; };
+		FB190D671DA3D5150043C52D /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB190D661DA3D5150043C52D /* TableViewCell.m */; };
+		FB190D6A1DA3DC120043C52D /* TravelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FB190D691DA3DC120043C52D /* TravelItem.m */; };
 		FB97E7A71DA3A9FB007E29AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB97E7A61DA3A9FB007E29AB /* main.m */; };
 		FB97E7AA1DA3A9FB007E29AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB97E7A91DA3A9FB007E29AB /* AppDelegate.m */; };
 		FB97E7AD1DA3A9FB007E29AB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB97E7AC1DA3A9FB007E29AB /* ViewController.m */; };
@@ -59,6 +61,10 @@
 		FB190D601DA3BB4B0043C52D /* TravelData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelData.m; sourceTree = "<group>"; };
 		FB190D621DA3CA460043C52D /* BaseDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDataModel.h; sourceTree = "<group>"; };
 		FB190D631DA3CA460043C52D /* BaseDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDataModel.m; sourceTree = "<group>"; };
+		FB190D651DA3D5150043C52D /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		FB190D661DA3D5150043C52D /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		FB190D681DA3DC120043C52D /* TravelItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelItem.h; sourceTree = "<group>"; };
+		FB190D691DA3DC120043C52D /* TravelItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelItem.m; sourceTree = "<group>"; };
 		FB97E7A21DA3A9FB007E29AB /* GogolookAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GogolookAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB97E7A61DA3A9FB007E29AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FB97E7A81DA3A9FB007E29AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -157,12 +163,16 @@
 				FB97E7A91DA3A9FB007E29AB /* AppDelegate.m */,
 				FB97E7AB1DA3A9FB007E29AB /* ViewController.h */,
 				FB97E7AC1DA3A9FB007E29AB /* ViewController.m */,
+				FB190D651DA3D5150043C52D /* TableViewCell.h */,
+				FB190D661DA3D5150043C52D /* TableViewCell.m */,
 				FB190D591DA3B13F0043C52D /* WebManager.h */,
 				FB190D5A1DA3B13F0043C52D /* WebManager.m */,
 				FB190D5C1DA3B5980043C52D /* BaseWebManager.h */,
 				FB190D5D1DA3B5980043C52D /* BaseWebManager.m */,
 				FB190D5F1DA3BB4B0043C52D /* TravelData.h */,
 				FB190D601DA3BB4B0043C52D /* TravelData.m */,
+				FB190D681DA3DC120043C52D /* TravelItem.h */,
+				FB190D691DA3DC120043C52D /* TravelItem.m */,
 				FB190D621DA3CA460043C52D /* BaseDataModel.h */,
 				FB190D631DA3CA460043C52D /* BaseDataModel.m */,
 				FB97E7AE1DA3A9FB007E29AB /* Main.storyboard */,
@@ -481,10 +491,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB190D5B1DA3B13F0043C52D /* WebManager.m in Sources */,
+				FB190D6A1DA3DC120043C52D /* TravelItem.m in Sources */,
 				FB190D611DA3BB4B0043C52D /* TravelData.m in Sources */,
 				FB190D641DA3CA460043C52D /* BaseDataModel.m in Sources */,
 				FB97E7AD1DA3A9FB007E29AB /* ViewController.m in Sources */,
 				FB97E7AA1DA3A9FB007E29AB /* AppDelegate.m in Sources */,
+				FB190D671DA3D5150043C52D /* TableViewCell.m in Sources */,
 				FB97E7A71DA3A9FB007E29AB /* main.m in Sources */,
 				FB190D5E1DA3B5980043C52D /* BaseWebManager.m in Sources */,
 			);

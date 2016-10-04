@@ -8,6 +8,7 @@ target 'GogolookAssignment' do
 
   # Pods for GogolookAssignment
   pod 'AFNetworking', '~> 3.0'
+  pod 'SDWebImage', '~>3.8'
 
 
   target 'GogolookAssignmentTests' do

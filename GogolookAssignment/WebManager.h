@@ -12,7 +12,7 @@
 
 - (void) doRequestTravelDataWithLimit:(NSInteger)limit
                                offset:(NSInteger)offset
-                         SuccessBlock:(void (^)(NSDictionary *dictionary))successBlock
+                         SuccessBlock:(void (^)(bool hasMore, NSInteger offset, NSArray *resultArray))successBlock
                          failureBlock:(void (^)(NSError *error))failureBlock;
 
 @end

@@ -8,11 +8,12 @@
 
 #import "WebManager.h"
 #import "TravelData.h"
+#import "TravelItem.h"
 @implementation WebManager
 
 - (void) doRequestTravelDataWithLimit:(NSInteger)limit
                                offset:(NSInteger)offset
-                         SuccessBlock:(void (^)(NSDictionary *dictionary))successBlock
+                         SuccessBlock:(void (^)(bool hasMore, NSInteger offset, NSArray *resultArray))successBlock
                          failureBlock:(void (^)(NSError *error))failureBlock {
     
     
@@ -25,11 +26,14 @@
               
               NSMutableArray *resultsArray = [NSMutableArray new];
               NSArray *jsonDataArray = responsedData[@"results"];
+              
               for (NSDictionary *dataDictionary in jsonDataArray) {
                   TravelData *data = [[TravelData alloc] initWithDictionary:dataDictionary];
                   [resultsArray addObject:data];
               }
-              NSLog(@"");
+              
+              successBlock((offset < [responsedData[@"count"] integerValue]),offset+jsonDataArray.count,resultsArray);
+              
           } failureBlock:^(NSError *error) {
               
           }];
