@@ -10,9 +10,17 @@
 #import "BaseWebManager.h"
 @protocol IWeb <NSObject>
 
+- (void) doRequestTravelDataWithSuccessBlock:(void (^)(bool hasMore, NSInteger offset, NSDictionary *result))successBlock
+                                failureBlock:(void (^)(NSError *error))failureBlock;
+
+- (void) doRequestTravelDataWithKey:(NSString *)keyword
+                       SuccessBlock:(void (^)(bool hasMore, NSInteger offset, NSDictionary *result))successBlock
+                       failureBlock:(void (^)(NSError *error))failureBlock;
+
 - (void) doRequestTravelDataWithLimit:(NSInteger)limit
                                offset:(NSInteger)offset
-                         SuccessBlock:(void (^)(bool hasMore, NSInteger offset, NSArray *resultArray))successBlock
+                                  key:(NSString *)keyword
+                         SuccessBlock:(void (^)(bool hasMore, NSInteger offset, NSDictionary *result))successBlock
                          failureBlock:(void (^)(NSError *error))failureBlock;
 
 @end

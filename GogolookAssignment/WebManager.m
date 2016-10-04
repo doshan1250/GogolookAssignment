@@ -11,28 +11,62 @@
 #import "TravelItem.h"
 @implementation WebManager
 
+- (void) doRequestTravelDataWithSuccessBlock:(void (^)(bool hasMore, NSInteger offset, NSDictionary *result))successBlock
+                                failureBlock:(void (^)(NSError *error))failureBlock{
+    [self doRequestTravelDataWithLimit:-1 offset:-1 key:nil SuccessBlock:successBlock failureBlock:failureBlock];
+}
+
+- (void) doRequestTravelDataWithKey:(NSString *)keyword
+                       SuccessBlock:(void (^)(bool hasMore, NSInteger offset, NSDictionary *result))successBlock
+                       failureBlock:(void (^)(NSError *error))failureBlock{
+    [self doRequestTravelDataWithLimit:-1 offset:-1 key:keyword SuccessBlock:successBlock failureBlock:failureBlock];
+}
+
 - (void) doRequestTravelDataWithLimit:(NSInteger)limit
                                offset:(NSInteger)offset
-                         SuccessBlock:(void (^)(bool hasMore, NSInteger offset, NSArray *resultArray))successBlock
+                                  key:(NSString *)keyword
+                         SuccessBlock:(void (^)(bool hasMore, NSInteger offset, NSDictionary *result))successBlock
                          failureBlock:(void (^)(NSError *error))failureBlock {
     
-    
+    NSMutableDictionary *parameter = [NSMutableDictionary new];
+    [parameter setValue:@"resourceAquire" forKey:@"scope"];
+    [parameter setValue:@"36847f3f-deff-4183-a5bb-800737591de5" forKey:@"rid"];
+    if (limit > 0) {
+        [parameter setValue:@(limit) forKey:@"limit"];
+        [parameter setValue:@(offset) forKey:@"offset"];
+    }
+    if (keyword != nil) {
+        [parameter setValue:keyword forKey:@"q"];
+    }
+    /*
+    @{@"scope":@"resourceAquire",
+      @"rid":@"36847f3f-deff-4183-a5bb-800737591de5",
+      //@"q":@"歷史建築",
+      //@"sort":@"CAT2 desc",
+      //@"limit":@(limit),
+      //@"offset":@(offset)
+      }
+    */
+
     [self doGETWithAPI:@"apiAccess"
-            parameters:@{@"scope":@"resourceAquire",
-                         @"rid":@"36847f3f-deff-4183-a5bb-800737591de5",
-                         @"limit":@(limit),
-                         @"offset":@(offset)}
+            parameters:parameter
           successBlock:^(NSDictionary *responsedData) {
               
-              NSMutableArray *resultsArray = [NSMutableArray new];
+              NSMutableDictionary *resultDictionary = [NSMutableDictionary new];
+              
               NSArray *jsonDataArray = responsedData[@"results"];
-              
-              for (NSDictionary *dataDictionary in jsonDataArray) {
-                  TravelData *data = [[TravelData alloc] initWithDictionary:dataDictionary];
-                  [resultsArray addObject:data];
+              NSArray *categories = [jsonDataArray valueForKeyPath:@"@distinctUnionOfObjects.CAT2"];
+              for (NSString *category in categories) {
+                  NSPredicate *bPredicate = [NSPredicate predicateWithFormat:@"SELF.CAT2 contains[cd] %@",category];
+                  NSArray *jsonDataInCategory = [jsonDataArray filteredArrayUsingPredicate:bPredicate];
+                  NSMutableArray *dataModelInCategory = [NSMutableArray new];
+                  for (NSDictionary *dataDictionary in jsonDataInCategory) {
+                      TravelData *data = [[TravelData alloc] initWithDictionary:dataDictionary];
+                      [dataModelInCategory addObject:data];
+                  }
+                  [resultDictionary setObject:dataModelInCategory forKey:category];
               }
-              
-              successBlock((offset < [responsedData[@"count"] integerValue]),offset+jsonDataArray.count,resultsArray);
+              successBlock((offset < [responsedData[@"count"] integerValue]),offset+jsonDataArray.count,resultDictionary);
               
           } failureBlock:^(NSError *error) {
               

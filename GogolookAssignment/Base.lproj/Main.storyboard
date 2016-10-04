@@ -26,7 +26,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="76"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8nh-aR-scH" id="QFw-yw-OKn">
-                                            <frame key="frameInset" width="375" height="76"/>
+                                            <frame key="frameInset" width="375" height="75"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yNg-8f-z8v">
@@ -66,12 +66,21 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXr-Td-4wl">
+                                <state key="normal" title="FilterFunction"/>
+                                <connections>
+                                    <action selector="actionFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tOx-Fv-zXz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zwp-NW-QRs" secondAttribute="bottom" id="3QU-CH-ePQ"/>
-                            <constraint firstItem="zwp-NW-QRs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="JZF-Q9-hIL"/>
+                            <constraint firstItem="zwp-NW-QRs" firstAttribute="top" secondItem="cXr-Td-4wl" secondAttribute="bottom" constant="18" id="829-FP-Ip0"/>
+                            <constraint firstItem="cXr-Td-4wl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GdQ-Nq-6m2"/>
+                            <constraint firstItem="zwp-NW-QRs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="56" id="JZF-Q9-hIL"/>
                             <constraint firstItem="zwp-NW-QRs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="VVF-C7-to9"/>
+                            <constraint firstItem="cXr-Td-4wl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="ddv-cv-ByF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zwp-NW-QRs" secondAttribute="trailing" constant="-16" id="i2C-KO-fKb"/>
                         </constraints>
                     </view>
@@ -81,7 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-76" y="106.59670164917542"/>
+            <point key="canvasLocation" x="-74.400000000000006" y="127.28635682158921"/>
         </scene>
     </scenes>
 </document>

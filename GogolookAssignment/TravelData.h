@@ -13,5 +13,6 @@
 @property (nonatomic,strong) NSString *stitle;
 @property (nonatomic,strong) NSString *xbody;
 @property (nonatomic,strong) NSString *file;
+@property (nonatomic,strong) NSString *CAT2;
 
 @end

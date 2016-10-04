@@ -11,8 +11,13 @@
 
 @interface TravelItem : NSObject
 
-@property (nonatomic,assign) BOOL hasMore;
-@property (nonatomic,assign) NSInteger offset;
-@property (nonatomic,strong) NSMutableArray <TravelData *>*travelDataArray;
+- (void) setDataDictionary:(NSDictionary <NSString *,NSArray<TravelData *> *> *)dataDictionary;
 
+- (void) setFilterKey:(NSString *)key;
+
+- (void) clearFilter;
+
+- (NSDictionary *) getDataDictionary;
+
+- (NSArray *) getAllCategories;
 @end
